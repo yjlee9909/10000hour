@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #5B2386;
+    margin: auto;
+}
+.tit-timelaw {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 564px;
+    margin-top: 200px;
+    align-items: center;
+    height: 410px;
+    margin: auto;
+}
+h1 {
+    display: none;
+}
+.tit-img {
+    width: 100%;
+    margin-top: 120px;
+    position: relative;
+    top: 35px;
+}
+.subtit {
+    font-family: 'OTEnjoystoriesBA';
+    color: #F5DF4D;
+    font-weight: 700;
+    margin-top: 130px;
+    font-size: 36px;
+    line-height: 39.6px;
+    width: 486px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+.sub-content {
+    background-image: url(../img/quotes.png);
+    /* background-size: 493px 96px; */
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    width: 493px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto;
+    font-weight: 400;
+    margin-top: 66px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.sub-content-str {
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+.form-sub {
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    padding-top: 102px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.form-write {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 52px;
+    font-weight: 400;
+    padding-bottom: 27px;
+}
+.form-con1 {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    height: 24px;
+    margin-left: 17px;
+    margin-right: 17px;
+    border: none;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(186, 188, 190, 1);
+    width: 148px;
+    padding: 17px 40px;
+    text-align: center;
+}
+
+.form-con2 {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    width: 148px;
+    height: 24px;
+    margin-left: 17px;
+    margin-right: 17px;
+    border: none;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(186, 188, 190, 1);
+    padding: 17px 30px;
+    text-align: center;
+}
+::placeholder {
+    color: rgba(186, 188, 190, 1);
+}
+.form-btn {
+    background: rgba(252, 238, 33, 1);
+    padding: 21px 49px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-size: 24px;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    border: none;
+}
+
+.form-click {
+    margin-left: 7px;
+    padding-top: 33px;
+    position: relative;
+    top: 50px;
+}
+.submitted {
+    font-family: 'GmarketSansMedium';
+    color: #FFFFFF;
+    margin-top: 147px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 130px;
+}
+.submitted h2 {
+    display: none;
+}
+.submitted-text {
+    font-size: 24px;
+    line-height: 72px;
+    font-weight: 400;
+}
+.submitted-result1 {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+    margin-left: 12px;
+    margin-right: 12px;
+    line-height: 89px;
+    vertical-align: middle;
+}
+.submitted-result2 {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+    margin-top: 17px;
+    margin-left: 12px;
+    margin-right: 12px;
+    vertical-align: middle;
+    line-height: 89px;
+}
+.submitted-go {
+    background: #FCEE21;
+    padding: 21px 49px;
+    height: 66px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-size: 24px;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 127px;
+    border: none;
+}
+.submitted-share {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    height: 66px;
+    padding: 21px 49px;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-left: 12px;
+    border: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-text {
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 120px;
+}
+
+.modal {
+    background-color: #FFFFFF;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 
+    0 15px 12px rgba(0,0,0,0.22);
+    flex-direction: column;
+    text-align: center;
+}
+.modal-h2 {
+    display: none;
+}
+
+.modal-text {
+    font-family: 'OTEnjoystoriesBA';
+    color: rgba(91, 35, 134, 1);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    line-height: 40px;
+    font-size: 36px;
+    margin-top: 60px;
+    display: block;
+}
+.modal-text strong {
+    font-family: 'OTEnjoystoriesBA';
+    color: rgba(91, 35, 134, 1);
+    font-size: 96px;
+    line-height: 106px;
+    text-align: center;
+    align-items: center;
+}
+.modal-licat {
+    margin: auto;
+    display: block;
+}
+.modal-btn {
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    width: 508px;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    line-height: 24px;
+    padding: 21px 49px;
+    border: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
