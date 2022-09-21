@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    background-color: #5B2386;
+    margin: auto;
+    text-align: center;
+}
+#app {
+    margin: 120px auto;
+}
+#app .tit-timelaw h1 {
+    visibility: hidden;
+}
+#app .tit-img {
+    width: 564px;
+    height: 265px;
+    object-fit: contain;
+    background-image: url(/img/clock.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#app .subtit {
+font-family: 'OTEnjoystoriesBA';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+color: #F5DF4D;
+margin-top: 46px;
+}
+#app .sub-content {
+    color: #FFFFFF;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2em;
+    margin-top: 78px;
+    margin-bottom: 102px;
+    background-image: url(/img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+#app .sub-content-str {
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+#app .form-write {
+    color: #FFFFFF;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 3em;
+}
+#app .form {
+    width: 228px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    margin-right: 17px;
+    margin-left: 17px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: #BABCBE;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 24px;
+
+}
+#app .form::placeholder {
+    color: rgba(186, 188, 190, 1);
+}
+#app .button {
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    border: none;
+    padding: 21px 49px;
+    color: #5B2386;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+#app div {
+    margin-top: 115px;
+}
+#app .button.form-btn {
+    vertical-align: top;
+    margin-right: 7px;
+}
+#app .form-click {
+    vertical-align: bottom;
+    object-position: 0px 10px;
+}
+#app .submitted {
+    margin-top: 147px;
+}
+#app .submitted h2{
+    visibility: hidden;
+}
+#app .submitted-text {
+    color: #FFFFFF;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 3em;
+}
+#app .submitted-result1 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+}
+#app .submitted-result2 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+}
+#app .button.submitted-go {
+    margin-right: 18px;
+}
+#app .button.submitted-share {
+    background-color: #FFFFFF;
+}
+
+.footer-logo {
+    /* margin-top: 130px; */
+    margin-bottom: 20px;
+}
+.footer-text {
+    color: #FFFFFF;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 116px;
+}
+.modal {
+    width: 800px;
+    height: 800px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;  
+    margin: 20px auto;  
+    
+}
+.modal .modal-h2 {
+    visibility: hidden;
+}
+.modal .modal-text strong {
+    font-family: 'OTEnjoystoriesBA';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106px;
+    color: #5B2386;
+    padding-top: 70px;
+}
+.modal .modal-text {
+    color: #5B2386;
+    font-family: 'OTEnjoystoriesBA';
+    font-size: 36px;
+    line-height: 40px;  
+}
+.modal-licat {
+    margin: auto;
+    display: block;
+}
