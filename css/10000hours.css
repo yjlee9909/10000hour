@@ -46,7 +46,7 @@ body {
     width: 564px;
     height: 265px;
     object-fit: contain;
-    background-image: url("/img/clock.png");
+    background-image: url(../img/clock.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -70,7 +70,7 @@ body {
     line-height: 1.7em;
     margin-top: 78px;
     margin-bottom: 102px;
-    background-image: url("/img/quotes.png");
+    background-image: url(../img/quotes.png);
     background-repeat: no-repeat;
     background-position: 50% 20%;
 }
