@@ -24,8 +24,8 @@
     font-style: normal;
     font-weight: 400;
     src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
-    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
 body {
@@ -33,12 +33,15 @@ body {
     margin: auto;
     text-align: center;
 }
+
 #app {
     margin: 120px auto;
 }
+
 #app .tit-timelaw h1 {
-    visibility: hidden;
+    display: none;
 }
+
 #app .tit-img {
     width: 564px;
     height: 265px;
@@ -48,39 +51,43 @@ body {
     background-size: contain;
     background-position: center;
 }
+
 #app .subtit {
-font-family: 'OTEnjoystoriesBA';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 40px;
-color: #F5DF4D;
-margin-top: 46px;
+    font-family: 'OTEnjoystoriesBA';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #F5DF4D;
+    margin-top: 46px;
 }
+
 #app .sub-content {
     color: #FFFFFF;
     font-family: 'GmarketSansMedium';
     font-weight: 400;
     font-size: 18px;
-    line-height: 2em;
+    line-height: 1.7em;
     margin-top: 78px;
     margin-bottom: 102px;
     background-image: url("/img/quotes.png");
     background-repeat: no-repeat;
     background-position: 50% 20%;
 }
+
 #app .sub-content-str {
     font-family: 'GmarketSansBold';
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
 }
+
 #app .form-write {
     color: #FFFFFF;
     font-family: 'GmarketSansMedium';
     font-weight: 400;
     font-size: 24px;
-    line-height: 3em;
+    line-height: 4em;
 }
 #app .form {
     width: 228px;
@@ -98,9 +105,11 @@ margin-top: 46px;
     font-size: 24px;
 
 }
+
 #app .form::placeholder {
     color: rgba(186, 188, 190, 1);
 }
+
 .button {
     background: #FCEE21;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -113,23 +122,29 @@ margin-top: 46px;
     font-size: 24px;
     line-height: 24px;
 }
-#app div {
+
+#app .form-div{
     margin-top: 115px;
 }
+
 #app .button.form-btn {
     vertical-align: top;
     margin-right: 7px;
 }
+
 #app .form-click {
     vertical-align: bottom;
     object-position: 0px 10px;
 }
+
 #app .submitted {
     margin-top: 147px;
 }
-#app .submitted h2{
-    visibility: hidden;
+
+#app .submitted h2 {
+    display: none;
 }
+
 #app .submitted-text {
     color: #FFFFFF;
     font-family: 'GmarketSansMedium';
@@ -137,27 +152,40 @@ margin-top: 46px;
     font-size: 24px;
     line-height: 3em;
 }
+
 #app .submitted-result1 {
     font-weight: 700;
     font-size: 72px;
     line-height: 72px;
+    vertical-align: bottom;
+    margin-left: 12px;
+    margin-right: 12px;
 }
+
 #app .submitted-result2 {
     font-weight: 700;
     font-size: 72px;
     line-height: 72px;
+    vertical-align: bottom;
+    margin-left: 12px;
+    margin-right: 12px;
 }
+.btn-submit {
+    margin-top: 127px;
+}
+
 #app .button.submitted-go {
     margin-right: 18px;
 }
+
 #app .button.submitted-share {
     background-color: #FFFFFF;
 }
 
 .footer-logo {
-    /* margin-top: 130px; */
     margin-bottom: 20px;
 }
+
 .footer-text {
     color: #FFFFFF;
     font-family: 'Noto Sans KR';
@@ -166,34 +194,38 @@ margin-top: 46px;
     line-height: 17px;
     margin-bottom: 116px;
 }
+
 .modal {
     width: 800px;
-    height: 800px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 30px;  
-    margin: 20px auto;  
+    border-radius: 30px;
+    margin: 80px auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .modal .modal-h2 {
-    visibility: hidden;
+    display: none;
 }
+
 .modal .modal-text strong {
     font-family: 'OTEnjoystoriesBA';
     font-weight: 700;
     font-size: 96px;
-    line-height: 106px;
     color: #5B2386;
-    padding-top: 70px;
+    margin-bottom: 4px;
     display: block;
 }
-.modal .modal-text {
+
+.modal .modal-text span {
     color: #5B2386;
     font-family: 'OTEnjoystoriesBA';
     font-size: 36px;
-    line-height: 40px;  
+    line-height: 0;
 }
+
 .modal-licat {
-    margin: auto;
+    margin: 29px auto 74px;
     display: block;
-    margin-bottom: 74px;
 }
