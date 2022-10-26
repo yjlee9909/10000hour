@@ -130,6 +130,7 @@ body {
 #app .button.form-btn {
     vertical-align: top;
     margin-right: 7px;
+    cursor: pointer;
 }
 
 #app .form-click {
@@ -176,10 +177,12 @@ body {
 
 #app .button.submitted-go {
     margin-right: 18px;
+    cursor: pointer;
 }
 
 #app .button.submitted-share {
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer-logo {
