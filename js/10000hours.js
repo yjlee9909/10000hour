@@ -1,18 +1,29 @@
-// 모달 창 처음에 안보이게 처리
-const modal = document.querySelector('.modal');
-modal.style.display = "none";
 
-// 선언
-const main = document.querySelector('.app');
-const formJob = main.querySelector('form p .con1');
-const formHour = main.querySelector('form p .con2');
-const formBtn = main.querySelector('form div .form-btn');
-const goBtn = main.querySelector('.submitted .submitted-go');
-const shareBtn = main.querySelector('.submitted .submitted-share');
+const startButton = document.querySelector(".form_btn");
+const result = document.querySelector(".submitted");
+const modal = document.querySelector(".modal");
+const openButton = document.querySelector(".submitted-go");
+const closeButton = document.querySelector(".modal-btn");
+const shareButton = document.querySelector(".submitted-share");
+const loading = document.querySelector(".result_loading");
 
+function calculator() {
+    const fieldValue = document.querySelector(".form.con1");
+    const timeValue = document.querySelector(".form.con2");
+    // 값 - value
+    const timeValue_int = Number(timeValue.value);
 
+    const fieldResult = document.querySelector(".submitted-result1");
+    const timeResult = document.querySelector(".submitted-result2");
 
-// 이벤트 추가
-formBtn.addEventListener('click', () => {
-    
-})
+    result.style.display = "none";
+    loading.style.display = "flex";
+
+    setTimeout(function() {
+        loading.style.display = "none";
+        fieldResult.innerText = fieldValue.value;
+        result.style.display = "flex";
+        timeResult.innerText = parseInt((10000/timeValue_int), 10);
+    }, 1800);   
+}
+startButton.addEventListener("click", calculator);

@@ -27,6 +27,12 @@
         url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
         url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
+/* 돌아가는 로딩 이미지 구현 - 애니메이션 효과 */
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 body {
     background-color: #5B2386;
@@ -50,6 +56,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    position: relative;
 }
 
 #app .subtit {
@@ -99,14 +106,13 @@ body {
     padding-top: 17px;
     padding-bottom: 16px;
     text-align: center;
-    color: #BABCBE;
     font-family: 'GmarketSansMedium';
     font-weight: 400;
     font-size: 24px;
 
 }
 
-#app .form::placeholder {
+#app input::placeholder {
     color: rgba(186, 188, 190, 1);
 }
 
@@ -121,14 +127,16 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
+    /* 단어 단위로 줄바꿈 설정 */
+    word-break: keep-all;
 }
 
 #app .form-div{
     margin-top: 115px;
 }
 
-#app .button.form-btn {
-    vertical-align: top;
+#app .button.form_btn {
+    /* vertical-align: top; */
     margin-right: 7px;
     cursor: pointer;
 }
@@ -137,9 +145,25 @@ body {
     vertical-align: bottom;
     object-position: 0px 10px;
 }
+/* 결과 로딩 */
+.result_loading {
+    display: none;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.result_loading .img_wrap {
+    width: 100px;
+    height: 100px;
+}
+.result_loading .img_wrap img {
+    width: 100%;
+    height: auto;
+    animation: rotate 1.1s infinite linear;
+}
 
 #app .submitted {
     margin-top: 147px;
+    display: none;
 }
 
 #app .submitted h2 {
@@ -199,17 +223,34 @@ body {
 }
 
 .modal {
-    width: 800px;
+    position: fixed;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
-    margin: 80px auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    z-index: 999;
+    display: none;
 }
 
 .modal .modal-h2 {
     display: none;
+}
+.modal .modal_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background-color: #FFF;
+    border-radius: 20px;
 }
 
 .modal .modal-text strong {
