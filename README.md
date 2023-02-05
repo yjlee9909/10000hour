@@ -1,4 +1,4 @@
-## 10000hours 실행 링크
+## 1만 시간의 법칙 실행 링크
 https://yjlee9909.github.io/10000hour/
 
 ## 미리보기
